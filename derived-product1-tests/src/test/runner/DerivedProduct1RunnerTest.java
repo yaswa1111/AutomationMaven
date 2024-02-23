@@ -7,10 +7,9 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = {"src/features"},
         glue ={"stepDef","testutilities"},
-        tags = "@News or @Shop",
         plugin = {"pretty", "html:target/cucumber-html-report","json:cucumber.json"}
 )
-public class CoreRunnerTest extends AbstractTestNGCucumberTests {
+public class DerivedProduct1RunnerTest extends AbstractTestNGCucumberTests {
 
     @Override
     @DataProvider()

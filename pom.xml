@@ -11,6 +11,7 @@
     <modules>
         <module>automation-framework</module>
         <module>core-product-tests</module>
+        <module>derived-product1-tests</module>
     </modules>
 
     <properties>

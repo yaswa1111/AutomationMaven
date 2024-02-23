@@ -29,7 +29,8 @@ public class BasePage<T extends BasePage<T>> {
             WebDriverManager.get().get(url);
             waitForPageLoadToComplete();
             waitForAjaxCallsToComplete();
-            while(!WebDriverManager.get().getCurrentUrl().equalsIgnoreCase(url)){
+            while(!WebDriverManager.get().getCurrentUrl().contains(url)){
+                System.out.println(WebDriverManager.get().getCurrentUrl());
                 WebDriverManager.get().get(url);
             }
             extentTestManager.get().log(Status.INFO, "Get URL is successful");
